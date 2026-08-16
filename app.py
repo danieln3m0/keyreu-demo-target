@@ -2,8 +2,8 @@
 
 
 def login(username, password):
-    # BUG: no valida password vacio
-    if username:
+    # Requiere tanto usuario como password no vacios.
+    if username and password:
         return True
     return False
 
