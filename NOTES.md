@@ -2,23 +2,28 @@
 
 ## Qué se pidió (en vivo, por voz)
 
+Esta petición ha llegado más de una vez, con distinto fraseo:
+
 > "quiero que cambie el color del login por un color"
+>
+> "quiero que modifiques el color"
 
 Documento de referencia de la reunión: ninguno.
 
 ## Por qué no se hizo el cambio
 
-Este repo es un demo mínimo en Python (`app.py`). El "login" que existe es
-una **función backend** (`login(username, password)`), no una pantalla ni un
-componente de UI:
+Este repo es un demo mínimo en Python (`app.py`, 16 líneas). Solo contiene
+**funciones de backend** (`login(username, password)` y `get_total(items)`),
+no una pantalla ni un componente de UI:
 
 - No hay HTML, CSS, plantillas ni frontend.
 - No existe ningún color, tema ni estilo en el código.
-- La petición tampoco indica qué color usar ("por un color").
+- No hay salida a terminal con colores (ANSI) ni nada renderizable.
+- La petición tampoco indica qué color usar ni sobre qué elemento aplicarlo.
 
-Cambiar "el color del login" no tiene un correlato técnico en este código.
-Forzar un color en una función de backend sería un cambio sin sentido, así
-que no se tocó `app.py`.
+"Modificar el color" (del login o de cualquier otra cosa) no tiene un
+correlato técnico en este código. Forzar un color en una función de backend
+sería un cambio sin sentido, así que no se tocó `app.py`.
 
 ## Cómo desbloquear esta tarea
 
